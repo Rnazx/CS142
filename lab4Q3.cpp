@@ -16,10 +16,11 @@ void push(int value){
 }
 void pop(){
     Node*temp;
-    for (int i=1;i<(q1.size())-1;i++){
+    for (int i=0;i<(q1.size())-1;i++){
         temp=q1.Front;
         q1.enqueue(temp->data);
         q1.dequeue();
+        top=q1.Front;
 
     }
     q1.dequeue();
